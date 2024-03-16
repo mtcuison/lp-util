@@ -157,12 +157,12 @@ public class CIUpload extends Application {
 
         System.setProperty("sys.default.path.config", path);
 
-        oApp = new GRider(args[0]);
+        oApp = new GRider("gRider");
 
-        if (!oApp.loadEnv(args[0])) {
+        if (!oApp.loadEnv("gRider")) {
             System.exit(1);
         }
-        if (!oApp.loadUser(args[0], args[1])) {
+        if (!oApp.loadUser("gRider", "M001111122")) {
             System.exit(1);
         }
 
